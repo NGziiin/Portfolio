@@ -20,9 +20,13 @@ h1{
 }
 .programação h1{
     color: white;
+    font-family: pricedown;
 }
 .programação p{
     color: white;
     text-align: right;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@font-face {
+    font-family: pricedown;
+    src: url(https://www.dafont.com/pt/pricedown.font);
 }
