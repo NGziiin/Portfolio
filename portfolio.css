@@ -1,8 +1,9 @@
 body{
     background-repeat: no-repeat;
     height: 3240px;
-    width: 1880px;
+    width: 1920px;
     background-color: black;
+    overflow-x: hidden;
 }
 h1{
     color: white;
@@ -13,20 +14,25 @@ h1{
     background-repeat:no-repeat;
     height: 1080px;
     width: 1920px;
-    position:absolute;
-    right: 0px;
+    position:relative;
+    right: 2px;
     top: 1081px;
-    text-align: right;
+    display: flex;
+    justify-content: center;
+}
+.square1{
+    background-color: red;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
 }
 .programação h1{
     color: white;
-    font-family: pricedown;
 }
 .programação p{
     color: white;
-    text-align: right;
-}
-@font-face {
-    font-family: pricedown;
-    src: url(https://www.dafont.com/pt/pricedown.font);
+    font-style: bold;
+    font-size: larger;
 }
