@@ -1,3 +1,28 @@
 body{
     background-repeat: no-repeat;
+    height: 3240px;
+    width: 1880px;
+    background-color: black;
+}
+h1{
+    color: white;
+}
+/* parte da programação */
+.programação{
+    background-image: image-set('imagem1.jpg');
+    background-repeat:no-repeat;
+    height: 1080px;
+    width: 1920px;
+    position:absolute;
+    right: 0px;
+    top: 1081px;
+    text-align: right;
+}
+.programação h1{
+    color: white;
+}
+.programação p{
+    color: white;
+    text-align: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
