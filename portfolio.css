@@ -9,30 +9,62 @@ h1{
     color: white;
 }
 /* parte da programação */
+/* texto central */
 .programação{
     background-image: image-set('imagem1.jpg');
     background-repeat:no-repeat;
     height: 1080px;
     width: 1920px;
     position:relative;
-    right: 2px;
     top: 1081px;
     display: flex;
     justify-content: center;
 }
 .square1{
-    background-color: red;
+    background-color: rgb(255,255, 255, 0.50);
     width: 500px;
     height: 250px;
     text-align: center;
     border-radius: 20px;
     position: absolute;
+    top: 40%;
+    backdrop-filter: blur(16px) saturate(180%);
+    box-shadow: 0px 0px 10px 10px rgb(255,255, 255, 0.50);
 }
-.programação h1{
-    color: white;
+.square1 h1{
+    color: black;
 }
-.programação p{
-    color: white;
+.square1 p{
+    color: black;
     font-style: bold;
     font-size: larger;
+}
+/* projetos na programação */
+.project1{
+    background-color: rgb(0, 0, 0, 0.50);
+    width: 90px;
+    text-align: left;
+    backdrop-filter: blur(16px) saturate(180%);
+    position: absolute;
+    left: 0px;
+    top: 20%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    animation-name: projects1;
+    animation-duration: 2ms;
+}
+@keyframes projects1{
+    from{
+        left: 0px;
+    }
+    to{
+        left: 300px;
+    }
+}
+.project1 p{
+    color: white;
+    font-size: 390%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
