@@ -1,1 +1,1 @@
-print << 'ola mundo' << endl;
+// chamando animação das letras do projetos

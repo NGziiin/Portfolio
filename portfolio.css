@@ -43,28 +43,26 @@ h1{
 .project1{
     background-color: rgb(0, 0, 0, 0.50);
     width: 90px;
-    text-align: left;
     backdrop-filter: blur(16px) saturate(180%);
     position: absolute;
     left: 0px;
     top: 20%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    transition: 2s;
+    box-shadow: 0px 0px 3px 3px black;
+    padding-right: 10px;
     text-align: center;
-    animation-name: projects1;
-    animation-duration: 2ms;
 }
-@keyframes projects1{
-    from{
-        left: 0px;
-    }
-    to{
-        left: 300px;
-    }
+.project1:hover{
+    width: 1500px;
+    box-shadow: 0px 0px 7px 7px black;
+    padding-right: 30px;
 }
 .project1 p{
     color: white;
     font-size: 390%;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
+    font-style: normal;
+    position: relative;
 }
