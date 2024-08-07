@@ -43,6 +43,7 @@ h1{
 .project1{
     background-color: rgb(0, 0, 0, 0.50);
     width: 90px;
+    height: 700px;
     backdrop-filter: blur(16px) saturate(180%);
     position: absolute;
     left: 0px;
@@ -51,18 +52,30 @@ h1{
     border-bottom-right-radius: 15px;
     transition: 2s;
     box-shadow: 0px 0px 3px 3px black;
-    padding-right: 10px;
-    text-align: center;
 }
-.project1:hover{
-    width: 1500px;
-    box-shadow: 0px 0px 7px 7px black;
-    padding-right: 30px;
+/* escrita "projetos" */
+.squarep{
+    background-color: transparent;
+    width: 60px;
+    height: 580px;
+    right: 15px;
+    position:fixed;
+    align-content: center;
+    text-shadow: white 0.0em 0.0em 0.0em;
+    transition: 2s;
 }
-.project1 p{
+.squarep p{
     color: white;
     font-size: 390%;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
-    position: relative;
+    text-align: center;
+    font-optical-sizing: auto;
+}
+/* animação da barra */
+.project1:hover{
+    width: 1500px;
+}
+.project1:hover .squarep{
+    text-shadow: white 0.0em 0.0em 0.5em;
 }
