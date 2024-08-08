@@ -93,19 +93,22 @@ button{
     border-radius: 15px;
     position: fixed;
     height: 40px;
+    width: 120px;
     top: 46%;
     color: black;
-    right: 1196px;
-    font-size: 24px;
+    right: 1214px;
     border: 0px transparent;
     transition: 1s;
     text-align: center;
-    size: 0px;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 button:hover{
     background-color: rgb(255, 255, 255, 0.75);
     box-shadow: 0px 0px 5px 5px rgb(255, 255, 255, 0.75);
-    size: 50%;
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transform: scale(1.1)
 }
 /* animação da barra */
 .project1:hover{

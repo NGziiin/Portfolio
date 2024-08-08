@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homer Simpsons</title>
+    <meta type="UTF-8">
+    <style>
+        body{
+            background-color: white;
+        }
+        .cabeça{
+            background-color: rgb(255, 217, 0);
+            position:absolute;
+            height: 120px;
+            width: 66px;
+            border: 2px solid;
+            border-radius: 45px;
+            top: 30%;
+            left: 40%;
+            transform: rotate(-4deg)
+        }
+        /* edição do olho 1 */
+        .eye1{
+            background-color: white;
+            border: 1px solid;
+            height: 30px;
+            width: 35px;
+            border-radius: 50px;
+            position: absolute;
+            top: -36px;
+            right:-3px;
+        }
+        .iris1{
+            background-color: black;
+            height: 4px;
+            width: 4px;
+            border-radius: 50px;
+            position: absolute;
+            left: 40px;
+            top: 8px;
+        }
+        /* fim da edição olho 1 */
+        /* edição do olho 2 */
+        .eye2{
+            background-color:white;
+            border: 1px solid;
+            height: 30px;
+            width: 34px;
+            border-radius: 50px;
+            position: absolute;
+            left:-11px;
+            top: -26px;
+        }
+        .iris2{
+            background-color: black;
+            height: 4px;
+            width: 4px;
+            border-radius: 50px;
+            position: absolute;
+            right: 22px;
+            top: 0px;
+        }
+        /* fim da edição olho 2*/
+        /* cabelo */
+        .cabelo1{
+            background-color: transparent;
+            border: 1px black solid;
+            width: 30px;
+            height: 40px;
+            position: absolute;
+            left: 23px;
+            top: -12px;
+            border-radius: 100%;
+            transform: rotate(-25deg);
+        }
+        .cabelo2{
+            background-color: transparent;
+            border: 1px black solid;
+            width: 30px;
+            height: 40px;
+            position: absolute;
+            left: 12px;
+            top: -13px;
+            border-radius: 100%;
+            transform: rotate(-20deg);
+        }
+        .cabdet3{
+            background-color:transparent;
+            height: 10px;
+            width: 19px;
+            border-bottom:black 1px solid;
+            position: absolute;
+            top:40px;
+            right: 50px;
+            transform:rotate(260deg)
+        }
+        .cabdet4{
+            background-color:transparent;
+            height: 10px;
+            width: 18px;
+            border-bottom:black 1px solid;
+            position: absolute;
+            top:38px;
+            right: 54px;
+            transform:rotate(278deg)
+        }
+        .cabdet5{
+            background-color:transparent;
+            height: 10px;
+            width: 17px;
+            border-bottom:black 1px solid;
+            position: absolute;
+            top:40px;
+            right: 57px;
+            transform:rotate(260deg)
+        }
+        .cabdet6{
+            background-color:transparent;
+            height: 10px;
+            width: 16px;
+            border-bottom:black 1px solid;
+            position: absolute;
+            top:38px;
+            right: 61px;
+            transform:rotate(278deg)
+        }
+        /* fim detalhes cabelo */
+        /* detalhes */
+        .cabdet1{
+            background-color:black;
+            width: 1px;
+            height: 7px;
+            transform: rotate(-20deg);
+            position: absolute;
+            left: 12px;
+            top: 8px;
+        }
+        .cabdet2{
+            background-color: black;
+            width: 1px;
+            height: 5px;
+            position: absolute;
+            left: 22px;
+            top: 2px;
+            transform: rotate(-15deg);
+        }
+        .detail{
+            background-color:rgb(255, 217, 0);
+            width: 20px;
+            height: 15px;
+            border-radius: 30%;
+            border-right: black 2px solid;
+            position:absolute;
+            left: 50px;
+            top: 29px;
+        }
+        .tampacab1{
+            background-color:rgb(255, 217, 0);
+            width: 34px;
+            height: 27px;
+            transform: rotate(26deg);
+            position:absolute;
+            top:18px;
+            left:-4px;
+            border-radius:10px;
+        }
+        .tampa1{
+            background-color:rgb(255, 217, 0);
+            width: 10px;
+            height: 17px;
+            position:absolute;
+            right:31px;
+        }
+        .tampacab2{
+            background-color: rgb(255, 217, 0);
+            width: 34px;
+            height: 27px;
+            position: absolute;
+            top:17px;
+            left:-2px;
+            border-radius: 5px;
+        }
+        /* fim dos detalhes */
+        .nariz{
+            background-color: rgb(255, 217, 0);
+            width: 40px;
+            height: 10px;
+            position:absolute;
+            right: -2px;
+            top: 24px;
+            border-radius: 30px;
+            border-right: 2px black solid;
+            border-bottom: 1px black solid;
+            border-top: 1px black solid;
+        }
+        .detnariz{
+            background-color: rgb(255, 217, 0);
+            height: 10px;
+            width: 10px;
+            border-radius:50%;
+            position:absolute;
+            right:33px;
+            top:1px;
+        }
+        /* orelha */
+        .orelha{
+            background-color:rgb(255, 217, 0);
+            width: 15px;
+            height: 20px;
+            border-radius: 100%;
+            position:absolute;
+            top: 55px;
+            right: 55px;
+            border-left: 2px black solid;
+            border-top: 2px black solid;
+            transform: rotate(-40deg)
+        }
+        .detore{
+            background-color: transparent;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            border-right: black 1px solid;
+            position: absolute;
+            top: 4px;
+        }
+        /* boca */
+        .boca1{
+            background-color:rgb(210, 180, 140);
+            width: 50px;
+            height: 40px;
+            position: absolute;
+            left: 20px;
+            top: 67px;
+            border-radius: 100%;
+            border-right: 2px black solid;
+            border-left:1px black solid;
+            border-top:1px black solid;
+            border-bottom:1px black solid;
+            transform: rotate(4deg);
+        }
+        .boca2{
+            background-color: rgb(210, 180, 140);
+            height: 25px;
+            width: 45px;
+            position: absolute;
+            left: 13px;
+            border-radius: 12px;
+            border-right:2px black solid;
+            border-bottom:1px black solid
+        }
+        .bocadet{
+            background-color: transparent;
+            width: 10px;
+            height: 10px;
+            border-top:1px black solid;
+            position: absolute;
+            right: 38px;
+            top:16px;
+            border-radius: 50%;
+            transform: rotate(-20deg)
+        }
+        /* barriga */
+        .pescoco{
+            background-color: rgb(255, 217, 0);
+            height: 40px;
+            width: 59px;
+            position:absolute;
+            top:90px;
+            left:-3px;
+            border-bottom:2px black solid;
+            border-left:2px black solid;
+            border-right:2px black solid;
+            transform:rotate(4deg)
+        }
+        .barriga1{
+            background-color:white;
+            height: 99px;
+            width: 89px;
+            border-bottom-left-radius: 150px;
+            position: absolute;
+            transform:rotate(-180deg);
+            top: 55px;
+            right:-55px;
+            border: 2px black solid;
+        }
+        .barriga2{
+            background-color:white;
+            height: 90px;
+            width: 90px;
+            border-bottom-left-radius: 150px;
+            position: absolute;
+            transform:rotate(270deg);
+            top: -2px;
+            left:65px;
+            border: 2px black solid;
+        }
+        .barriga3{
+            background-color:white;
+            height: 66px;
+            width: 118px;
+            border: black 2px solid;
+            position: absolute;
+            left:-30px;
+            bottom:39px;
+
+        }
+        .barriga4{
+            background-color: white;
+            height: 30px;
+            width: 30px;
+            border:black 2px solid;
+            border-bottom-left-radius: 25px;
+            position: absolute;
+            top:50px;
+            right:57px;
+            transform:rotate(7deg)
+        }
+        .barriga5{
+            background-color: white;
+            height: 30px;
+            width: 30px;
+            border: black 2px solid;
+            border-top-left-radius: 25px;
+            position:absolute;
+            top:-68px;
+            left:-6px;
+        }
+        .det1{
+            background-color:white;
+            width: 39px;
+            height: 30px;
+            position:absolute;
+            top:49px;
+            transform: rotate(-7deg)
+        }
+        .det2{
+            background-color:white;
+            width: 39px;
+            height: 30px;
+            position:absolute;
+            top:-35px;
+        }
+        .det3{
+            background-color:white;
+            width: 67px;
+            height: 30px;
+            position: absolute;
+            left: 24px;
+            top:-18px
+        }
+        .det4{
+            background-color:white;
+            width: 67px;
+            height: 30px;
+            position: absolute;
+            left: 0px;
+            top:71px
+        }
+        .det5{
+            background-color: white;
+            width: 34px;
+            height: 30px;
+            border-radius: 50%;
+            position: relative;
+            top: -68px;
+            left:-20px;
+        }
+        /* manga e braço*/
+        .manga1{
+            background-color: white;
+            width: 50px;
+            height: 50px;
+            border-left: 1px black solid;
+            border-right: 2px black solid;
+            border-bottom:2px black solid;
+            border-top: 2px black solid;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            position: absolute;
+            left: -21px;
+            top:60px;
+        }
+        .manga2{
+            background-color: white;
+            width: 60px;
+            height: 30px;
+            position:absolute;
+            border: black solid 2px;
+            border-top-left-radius: 30px;
+            border-top-right-radius:30px;
+            right:-6px;
+            bottom: 26px;
+        }
+        .braço2{
+            background-color:rgb(255, 217, 0);
+            width: 23px;
+            height: 30px;
+            position: absolute;
+            left:60px;
+            top: 70px;
+            border: 1px black solid;
+
+        }
+        .detmanga{
+            background-color: white;
+            width: 20px;
+            height: 20px;
+        }
+        .braço1{
+            background-color:rgb(255, 217, 0);
+            width: 80px;
+            height: 44px;
+            position:absolute;
+            left: 31px;
+            top: 63px;
+            border-top:1px black solid;
+            border-bottom:1px black solid;
+        }
+        /*gola*/
+        .gola1{
+            background-color: white;
+            width: 20px;
+            height: 50px;
+            border:black 1px solid;
+            position:absolute;
+            top: -26px;
+            right:53px;
+            border-bottom-left-radius: 9px;
+            border-top-left-radius: 9px;
+        }
+        .gola2{
+            background-color: white;
+            border: 1px black solid;
+            height: 20px;
+            width: 30px;
+            position:absolute;
+            top:117px;
+            left:40px;
+            transform:rotate(5deg)
+        }
+        .detgola1{
+            position:absolute;
+            bottom: 58px;
+            width: 0;
+            height: 0;
+            border-left: 17px solid transparent;
+            border-right: 0px solid transparent;
+            border-top: 25px solid white;
+        }
+        .detgola2{
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-left: 15px solid transparent;
+            border-right: 0px solid transparent;
+            border-top:15px solid rgb(255, 217, 0);
+            right: -1px;
+            top: -8px;
+            transform:rotate(45deg)
+        }
+        .detgola3{
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-left: 0px solid transparent;
+            border-right: 18px solid transparent;
+            border-top: 15px solid transparent;
+            transform: rotate(-45deg);
+            left: -10px;
+            top: -3px;
+        }
+        .detgola4{
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-left: 0px solid transparent;
+            border-right: 12px solid transparent;
+            border-top: 14px solid gray;
+            transform:rotate(230deg);
+            left: -14px;
+            top: -33px;
+            opacity: 50%;
+        }
+        .linha1{
+            background-color: transparent;
+            width: 30px;
+            height: 33px;
+            position: absolute;
+            left: -15px;
+            top: -40px;
+            border-top: black solid 1px;
+            transform:rotate(50deg)
+        }
+        .linha2{
+            background-color: transparent;
+            width: 13px;
+            height: 33px;
+            position: absolute;
+            left: 23px;
+            top: -22px;
+            border-top: black solid 1px;
+            transform: rotate(-45deg)
+        }
+        .linha3{
+            background-color: transparent;
+            width: 6px;
+            height: 3px;
+            border-top:2px black solid;
+            position:absolute;
+            left: -12px;
+            top: -13px;
+        }
+        .linha4{
+            background-color: transparent;
+            width: 9px;
+            height: 6px;
+            border-top: 2px black solid;
+            position: absolute;
+            top: -36px;
+            left: 12px;
+        }
+        .linha5{
+            background-color: transparent;
+            width: 16px;
+            height: 9px;
+            border-top: 1px black solid;
+            position: absolute;
+            bottom: 33px;
+            left: 11px;
+            transform:rotate(-40deg)
+        }
+        /*perna*/
+        .leg1{
+            background-color: rgb(64, 105, 225);
+            height: 60px;
+            width: 147px;
+            position: absolute;
+            top: -39px;
+            right: -15px;
+            border: black 2px solid;
+            border-bottom-left-radius: 300px;
+            border-bottom-right-radius:300px;
+        }
+        .leg2{
+            background-color:rgb(64, 105, 225);
+            width: 65px;
+            height: 128px;
+            position: absolute;
+            top: 30px;
+            left:12px;
+            border-left:2px black solid;
+            border-bottom:2px black solid;
+            border-right:2px black solid;
+        }
+        .leg3{
+            background-color: rgb(64, 105, 225);
+            width: 65px;
+            height: 120px;
+            position:absolute;
+            top:188px;
+            left:29px;
+            border-bottom:2px black solid;
+            border-right:2px black solid;
+        }
+        .leg4{
+            background-color:transparent;
+            width: 66px;
+            border-top:1px black solid;
+            position: absolute;
+            top:117px;
+        }
+        .leg5{
+            background-color:transparent;
+            width: 61px;
+            border-top:1px black solid;
+            position: absolute;
+            top:117px;
+            left: 60px;
+        }
+        .leg6{
+            background-color:rgb(64, 105, 225);
+            width: 30px;
+            height: 30px;
+            position:absolute;
+            left:40px;
+        }
+        /* mão */
+        .mao{
+            background-color:rgb(255, 217, 0);
+            height: 30px;
+            width: 25px;
+            border-radius: 40%;
+            position:absolute;
+            top:17px;
+            left: 68px;
+            border-bottom:black 2px solid;
+        }
+        /* dedo */
+        .dedo1{
+            background-color: rgb(255, 217, 0);
+            position: absolute;
+            height: 13px;
+            width: 25px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            top: -25px;
+            left: -1px;
+            border-right:1px black solid;
+            border-top: 1px black solid;
+            transform:rotate(-30deg)
+        }
+        .dedo2{
+            background-color: rgb(255, 217, 0);
+            position: absolute;
+            height: 13px;
+            width: 30px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            top: 13px;
+            left: 4px;
+            border-right:1px black solid;
+            border-top: 1px black solid;
+            border-bottom: 1px black solid;
+            transform:rotate(30deg)
+        }
+        .dedo3{
+            background-color: rgb(255, 217, 0);
+            position: absolute;
+            height: 13px;
+            width: 30px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            top: 14px;
+            left: 0px;
+            border-right:1px black solid;
+            border-bottom: 1px black solid;
+            border-top: 1px black solid;
+            transform:rotate(2deg)
+        }
+        .dedo4{
+            background-color: rgb(255, 217, 0);
+            position: absolute;
+            height: 13px;
+            width: 23px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            top: 14px;
+            left: 7px;
+            border-right:1px black solid;
+            border-bottom: 2px black solid;
+            border-top:1px black solid; 
+            transform:rotate(2deg)
+        }
+        .tampadedo2{
+            background-color: rgb(255, 217, 0);
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            left:-29px;
+            top:-6px;
+            transform: rotate(-4deg)
+        }
+        /* sapato */
+        .sapato1{
+            background-color: rgb(112, 128, 144);
+            width: 74px;
+            height: 30px;
+            position: absolute;
+            top: 304px;
+            right:-58px;
+            border-radius: 100%;
+            transform:rotate(15deg);
+            border-top: 2px black solid;
+            border-bottom:2px black solid;
+            border-right:2px black solid;
+        }
+        .solado1{
+            background-color:rgb(112, 128, 144);
+            border: 2px black solid;
+            width: 20px;
+            height: 37px;
+            position: absolute;
+            transform:rotate(-14deg)
+        }
+        .arruma1{
+            background-color: rgb(112, 128, 144);
+            width: 20px;
+            height: 24px;
+            position: absolute;
+            top: 6px;
+            left: 10px;
+        }
+        .sapato2{
+            background-color: rgb(112, 128, 144);
+            width: 80px;
+            height: 30px;
+            position: absolute;
+            top:308px;
+            right:-10px;
+            border-radius:100%;
+            transform:rotate(15deg);
+            border-top:2px solid black;
+            border-bottom:2px solid black;
+            border-right:2px solid black;
+        }
+        .solado2{
+            background-color:rgb(112, 128, 144);
+            border: 2px black solid;
+            width: 24px;
+            height: 35px;
+            position: absolute;
+            transform:rotate(-14deg);
+            right:65px;
+            top:4px;
+        }
+        .arruma2{
+            background-color: rgb(112, 128, 144);
+            width: 20px;
+            height: 24px;
+            position:absolute;
+            left:20px;
+        }
+        .detalhesapato{
+            background-color: transparent;
+            width: 26px;
+            height: 25px;
+            position:absolute;
+            border-top: 1px black solid;
+            top:30px;
+            right:16px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- cabeça -->
+    <div class="cabeça">
+        <div class="gola2"></div>
+        <!--corpo-->
+        <div class="pescoco">
+            <!--sapato-->
+            <div class="sapato1">
+                <div class="solado1">
+                    <div class="arruma1"></div>
+                </div>
+            </div>
+            <div class="sapato2">
+                <div class="solado2">
+                    <div class="arruma2">
+                        <div class="detalhesapato"></div>
+                    </div>
+                </div>
+            </div>
+            <!--pernas-->
+            <div class="leg3">
+                <div class="leg1">
+                    <div class="leg2">
+                        <!--barra da calça-->
+                        <div class="leg4"></div>
+                        <div class="leg5"></div>
+                        <!---->
+                        <div class="leg6"></div>
+                    </div>
+                </div>
+            </div>
+            <!--braço2-->
+            <div class="braço2">
+                <div class="manga2"></div>
+            </div>
+            <!--barriga-->
+            <div class="barriga1">
+                <div class="barriga2">
+                    <div class="barriga3">
+                        <div class="barriga4">
+                            <div class="barriga5">
+                                <!--detalhes da barriga-->
+                                <div class="det1">
+                                    <div class="det2">
+                                        <div class="det3">
+                                            <div class="det4">
+                                                <div class="det5">
+                                                    <!--braço da frente-->
+                                                    <div class="braço1">
+                                                        <div class="mao">
+                                                            <!--dedo-->
+                                                            <div class = "dedo1">
+                                                                <div class="dedo2">
+                                                                    <div class="dedo3">
+                                                                        <div class="dedo4">
+                                                                            <div class="tampadedo2"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--detalhe do braço-->
+                                                    <div class="manga1">
+                                                        <div class="detmanga">
+                                                            <!--gola-->
+                                                            <div class="gola1">
+                                                                <div class="detgola1">
+                                                                    <div class="detgola4"></div>
+                                                                    <!--linha de correção do pescoço-->
+                                                                    <div class="linha3"></div>
+                                                                    <!---->
+                                                                    <div class="detgola2">
+                                                                        <div class="detgola3">
+                                                                            <!--linha de correção da gola-->
+                                                                            <div class="linha1"></div>
+                                                                            <div class="linha2"></div>
+                                                                            <div class="linha4"></div>
+                                                                            <div class="linha5"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--cabelo-->
+        <div class="cabelo1">
+            <div class="tampacab1">
+                <div class="tampa1"></div>
+            </div>
+        </div>
+        <div class="cabelo2">
+            <div class="tampacab2">
+                <div class="tampa2"></div>
+            </div>
+        </div>
+        <!-- detalhes -->
+        <div class="cabdet1"></div>
+        <div class="cabdet2"></div>
+        <div class="detail"></div>
+        <div class="cabdet3"></div>
+        <div class="cabdet4"></div>
+        <div class="cabdet5"></div>
+        <div class="cabdet6"></div>
+        <!--orelha-->
+        <div class="orelha">
+            <div class="detore"></div>
+        </div>
+        <!--boca-->
+        <div class="boca1">
+            <div class="boca2">
+                <div class="bocadet"></div>
+            </div>
+            <!--olho-->
+            <div class="eye1">
+                <!--nariz-->
+                <div class="nariz">
+                    <div class="detnariz"></div>
+                    <!--olho 2-->
+                    <div class="eye2">
+                        <!--iris-->
+                        <div class="iris1">
+                             <div class="iris2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
