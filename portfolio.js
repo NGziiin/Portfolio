@@ -1,1 +1,3 @@
-// chamando animação das letras do projetos
+// configurando botões
+
+function view1bt()
