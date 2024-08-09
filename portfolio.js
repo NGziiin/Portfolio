@@ -1,5 +1,5 @@
 // configurando botões
-
+// botão do homer
 function view1bt(homer){
 
     if (homer == 1){
@@ -9,6 +9,10 @@ function view1bt(homer){
         window.open("https://github.com/NGziiin/HTML-design/blob/main/homer%20simpson.html");
     }
 }
+function mousehomer(){
+    document.getElementById("texto").innerHTML = "HOMER SIMPSON"
+}
+//botão do bart
 function view2bt(bart){
     if (bart == 1){
         alert("PROJETO NÃO FINALIZADO");
@@ -17,3 +21,9 @@ function view2bt(bart){
         alert("PROJETO NÃO FINALIZADO");
     }
 }
+function mousebart(){
+    document.getElementById("texto").innerHTML = "BART SIMPSON";
+}
+function reset(){
+    document.getElementById("texto").innerHTML = "";
+  }

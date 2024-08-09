@@ -93,6 +93,28 @@ h1{
     transition: 2s;
     top: 22%;
 }
+/* texto nomeando */
+#texto{
+    background-color: transparent;
+    color: white;
+    height: 100px;
+    width: 700px;
+    position: fixed;
+    right: 350px;
+    top: 30px;
+    font-size: 70px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: luzletra 2s infinite alternate;
+}
+@keyframes luzletra{
+    0%{
+        text-shadow: white 0.0em 0.0em 0.1em;
+    }
+    100%{
+        text-shadow: white 0.0em 0.0em 0.3em;
+    }
+}
 /* botão do homer */
 .botao1{
     background-color: rgb(255, 255, 255);
