@@ -27,3 +27,11 @@ function mousebart(){
 function reset(){
     document.getElementById("texto").innerHTML = "";
   }
+  
+// mensagem de em breve
+function error(x){
+    document.getElementById("texto").innerHTML = "EM BREVE";
+    if (x == 1){
+        alert ("EM BREVE");
+    }
+}

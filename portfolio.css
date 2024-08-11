@@ -33,6 +33,7 @@ h1{
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+    user-select:none;
 }
 .square1 h1{
     color: black;
@@ -58,6 +59,7 @@ h1{
     border-bottom-right-radius: 15px;
     transition: 2s;
     box-shadow: 0px 0px 3px 3px black;
+    user-select:none;
 }
 /* escrita "projetos" */
 .squarep{
@@ -78,7 +80,7 @@ h1{
     text-align: center;
     font-optical-sizing: auto;
 }
-/* projeto do homer */
+/* projetos*/
 .programjetos{
     background-color: white;
     background-image: image-set('homer.png');
@@ -92,6 +94,38 @@ h1{
     right: 1200px;
     transition: 2s;
     top: 22%;
+    cursor: pointer;
+}
+.programjetos2{
+    background-color: white;
+    background-image: image-set('bart.png');
+    background-size: 124px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    border-radius: 20%;
+    box-shadow: 0px 0px 5px 0px white;
+    right: 938px;
+    transition: 2s;
+    top: 22%;
+    cursor: pointer;
+}
+.programjetos3{
+    background-color: white;
+    background-image: image-set();
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    border-radius: 20%;
+    box-shadow: 0px 0px 5px 0px white;
+    right: 676px;
+    transition: 2s;
+    top: 22%;
+    cursor: pointer;
 }
 /* texto nomeando */
 #texto{
@@ -105,7 +139,18 @@ h1{
     font-size: 70px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    animation: luzletra 2s infinite alternate;
+}
+.informação{
+    color: white;
+    position: fixed;
+    width: 1200px;
+    height: 100px;
+    top: 640px;
+    right:200px;
+    animation: luzletra 2s infinite reverse;
+    font-size: 30px;
+    text-align: center;
+    user-select:none;
 }
 @keyframes luzletra{
     0%{
@@ -115,7 +160,7 @@ h1{
         text-shadow: white 0.0em 0.0em 0.3em;
     }
 }
-/* botão do homer */
+/* botões */
 .botao1{
     background-color: rgb(255, 255, 255);
     backdrop-filter: blur(16px) saturate(180%);
@@ -140,23 +185,7 @@ h1{
     color: white;
     transform: scale(1.1);
 }
-/* imagem do bart */
-.programjetos2{
-    background-color: white;
-    background-image: image-set('bart.png');
-    background-size: 124px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 150px;
-    height: 150px;
-    position: fixed;
-    border-radius: 20%;
-    box-shadow: 0px 0px 5px 0px white;
-    right: 938px;
-    transition: 2s;
-    top: 22%;
-}
-/* botão do bart */
+/* botão 2 */
 .botao2{
     background-color: rgb(255, 255, 255);
     backdrop-filter: blur(16px) saturate(180%);
@@ -175,6 +204,31 @@ h1{
     cursor: pointer;
 }
 .botao2:hover{
+    background-color: rgb(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255, 0.75);
+    font-size: medium;
+    color: white;
+    transform: scale(1.1);
+}
+/* botão 3 */
+.botao3{
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 15px;
+    position: fixed;
+    height: 40px;
+    width: 120px;
+    top: 46%;
+    color: black;
+    right: 690px;
+    border: 0px transparent;
+    transition: 0.3s;
+    text-align: center;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.botao3:hover{
     background-color: rgb(255, 255, 255, 0.75);
     box-shadow: 0px 0px 5px 5px rgb(255, 255, 255, 0.75);
     font-size: medium;
