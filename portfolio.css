@@ -11,7 +11,7 @@ h1{
 /* parte da programação */
 /* texto central */
 .programação{
-    background-image: image-set('imagem1.jpg');
+    background-image: url('./assets/png/imagem1.jpg');
     background-repeat:no-repeat;
     height: 1080px;
     width: 1920px;
@@ -83,7 +83,7 @@ h1{
 /* projetos*/
 .programjetos{
     background-color: white;
-    background-image: image-set('homer.png');
+    background-image: image-set('./assets/png/homer.png');
     background-repeat: no-repeat;
     background-position: center;
     width: 150px;
@@ -98,7 +98,7 @@ h1{
 }
 .programjetos2{
     background-color: white;
-    background-image: image-set('bart.png');
+    background-image: image-set('./assets/png/bart.png');
     background-size: 124px;
     background-repeat: no-repeat;
     background-position: center;
@@ -114,17 +114,131 @@ h1{
 }
 .programjetos3{
     background-color: white;
-    background-image: image-set();
+    background-image: image-set('./assets/png/em_breve.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 155px;
     width: 150px;
     height: 150px;
     position: fixed;
     border-radius: 20%;
-    box-shadow: 0px 0px 5px 0px white;
+    box-shadow: 0px 0px 5px 0px yellow;
     right: 676px;
     transition: 2s;
     top: 22%;
+    cursor: pointer;
+}
+.programjetos4{
+    background-color: white;
+    background-image: image-set('./assets/png/em_breve.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 155px;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    border-radius: 20%;
+    box-shadow: 0px 0px 5px 0px yellow;
+    right: 412px;
+    transition: 2s;
+    top: 22%;
+    cursor: pointer;
+}
+.programjetos5{
+    background-color: white;
+    background-image: image-set('./assets/png/em_breve.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 155px;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    border-radius: 20%;
+    box-shadow: 0px 0px 5px 0px yellow;
+    right: 150px;
+    transition: 2s;
+    top: 22%;
+    cursor: pointer;
+}
+/* segunda linha */ /* imagens de projetos */
+.programjetos6{
+    background-color: white;
+    background-image: image-set('./assets/png/em_breve.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 155px;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    border-radius: 20%;
+    box-shadow: 0px 0px 5px 0px yellow;
+    right: 1200px;
+    transition: 2s;
+    top: 56%;
+    cursor: pointer;
+}
+.programjetos7{
+    background-color: white;
+    background-image: image-set('./assets/png/em_breve.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 155px;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    border-radius: 20%;
+    box-shadow: 0px 0px 5px 0px yellow;
+    right: 938px;
+    transition: 2s;
+    top: 56%;
+    cursor: pointer;
+}
+.programjetos8{
+    background-color: white;
+    background-image: image-set('./assets/png/em_breve.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 155px;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    border-radius: 20%;
+    box-shadow: 0px 0px 5px 0px yellow;
+    right: 676px;
+    transition: 2s;
+    top: 56%;
+    cursor: pointer;
+}
+.programjetos9{
+    background-color: white;
+    background-image: image-set('./assets/png/em_breve.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 155px;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    border-radius: 20%;
+    box-shadow: 0px 0px 5px 0px yellow;
+    right: 412px;
+    transition: 2s;
+    top: 56%;
+    cursor: pointer;
+}
+.programjetos10{
+    background-color: white;
+    background-image: image-set('./assets/png/em_breve.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 155px;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    border-radius: 20%;
+    box-shadow: 0px 0px 5px 0px yellow;
+    right: 150px;
+    transition: 2s;
+    top: 56%;
     cursor: pointer;
 }
 /* texto nomeando */
@@ -229,6 +343,177 @@ h1{
     cursor: pointer;
 }
 .botao3:hover{
+    background-color: rgb(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255, 0.75);
+    font-size: medium;
+    color: white;
+    transform: scale(1.1);
+}
+/* botão 4 */
+.botao4{
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 15px;
+    position: fixed;
+    height: 40px;
+    width: 120px;
+    top: 46%;
+    color: black;
+    right: 426px;
+    border: 0px transparent;
+    transition: 0.3s;
+    text-align: center;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.botao4:hover{
+    background-color: rgb(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255, 0.75);
+    font-size: medium;
+    color: white;
+    transform: scale(1.1);
+}
+/* botão 5 */
+.botao5{
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 15px;
+    position: fixed;
+    height: 40px;
+    width: 120px;
+    top: 46%;
+    color: black;
+    right: 164px;
+    border: 0px transparent;
+    transition: 0.3s;
+    text-align: center;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.botao5:hover{
+    background-color: rgb(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255, 0.75);
+    font-size: medium;
+    color: white;
+    transform: scale(1.1);
+}
+/* segunda linha de projetos */ /* botões da segunda linha */
+.botao6{
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 15px;
+    position: fixed;
+    height: 40px;
+    width: 120px;
+    top: 80%;
+    color: black;
+    right: 1214px;
+    border: 0px transparent;
+    transition: 0.3s;
+    text-align: center;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.botao6:hover{
+    background-color: rgb(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255, 0.75);
+    font-size: medium;
+    color: white;
+    transform: scale(1.1);
+}
+.botao7{
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 15px;
+    position: fixed;
+    height: 40px;
+    width: 120px;
+    top: 80%;
+    color: black;
+    right: 950px;
+    border: 0px transparent;
+    transition: 0.3s;
+    text-align: center;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.botao7:hover{
+    background-color: rgb(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255, 0.75);
+    font-size: medium;
+    color: white;
+    transform: scale(1.1);
+}
+.botao8{
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 15px;
+    position: fixed;
+    height: 40px;
+    width: 120px;
+    top: 80%;
+    color: black;
+    right: 690px;
+    border: 0px transparent;
+    transition: 0.3s;
+    text-align: center;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.botao8:hover{
+    background-color: rgb(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255, 0.75);
+    font-size: medium;
+    color: white;
+    transform: scale(1.1);
+}
+.botao9{
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 15px;
+    position: fixed;
+    height: 40px;
+    width: 120px;
+    top: 80%;
+    color: black;
+    right: 426px;
+    border: 0px transparent;
+    transition: 0.3s;
+    text-align: center;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.botao8:hover{
+    background-color: rgb(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255, 0.75);
+    font-size: medium;
+    color: white;
+    transform: scale(1.1);
+}
+.botao10{
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 15px;
+    position: fixed;
+    height: 40px;
+    width: 120px;
+    top: 80%;
+    color: black;
+    right: 164px;
+    border: 0px transparent;
+    transition: 0.3s;
+    text-align: center;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.botao10:hover{
     background-color: rgb(255, 255, 255, 0.75);
     box-shadow: 0px 0px 5px 5px rgb(255, 255, 255, 0.75);
     font-size: medium;
