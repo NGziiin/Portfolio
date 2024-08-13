@@ -3,7 +3,6 @@
 function view1bt(homer){
     document.getElementById("texto").innerHTML = "HOMER SIMPSON";
     document.getElementById("texto").style.color = 'YELLOW';
-    document.getElementById("texto").style.fontFamily = 'Simpsons';
     if (homer == 1){
         window.open("./assets/Projects/homer_simpson.html");
     }
@@ -15,7 +14,6 @@ function view1bt(homer){
 function view2bt(bart){
     document.getElementById("texto").innerHTML = "BART SIMPSON";
     document.getElementById("texto").style.color = 'YELLOW';
-    document.getElementById("texto").style.fontFamily = 'Simpsons';
     if (bart == 1){
         alert("PROJETO NÃO FINALIZADO");
     }
@@ -32,7 +30,6 @@ function reset(){
 function error(x){
     document.getElementById("texto").innerHTML = "EM BREVE";
     document.getElementById("texto").style.color = 'white';
-    document.getElementById("texto").style.fontFamily = 'arial';
     if (x == 1){
         alert ("EM BREVE");
     }
