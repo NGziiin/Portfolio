@@ -34,3 +34,14 @@ function error(x){
         alert ("EM BREVE");
     }
 }
+
+// acompanhar o mouse
+document.addEventListener('mousemove', function(e) {
+    const mouseanim = document.querySelector('.mouseanim');
+    const sobremim = document.querySelector('.sobremim h1');
+    const x = e.clientX - mouseanim.offsetWidth / 2;
+    const y = e.clientY - mouseanim.offsetHeight / 2;
+    mouseanim.style.transform = `translate(${x}px, ${y}px)`;
+    sobremim.style.opacity = 1;
+});
+

@@ -4,9 +4,42 @@ body{
     width: 1920px;
     background-color: black;
     overflow-x: hidden;
+    margin: 0px;
+    word-wrap: break-word;
 }
-h1{
-    color: white;
+.sobremim{
+    background-color: black;
+    height: 1080px;
+    width: 1920px;
+    word-wrap: break-word;
+    overflow: hidden;
+    position: relative;
+}
+.sobremim h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: limegreen;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+.mouseanim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    mix-blend-mode: difference;
+    pointer-events: none;
 }
 /* parte da programação */
 /* texto central */
@@ -14,8 +47,8 @@ h1{
     background-image: url('./assets/png/imagem1.jpg');
     background-repeat:no-repeat;
     height: 1080px;
-    width: 1920px;
-    position:relative;
+    position:absolute;
+    width: 100%;
     top: 1081px;
     display: flex;
     justify-content: center;
@@ -534,4 +567,41 @@ h1{
 /* animação perfil bart */
 .project1:hover .programjetos2{
     box-shadow: 0px 0px 5px 1px white;
+}
+/* efeito entre projetos */
+.programação::after{
+    content: 'sou lindo';
+    color: transparent;
+    background: linear-gradient(0deg, rgb(0,0,0) 0%, rgb(0,0,0)60%, transparent);
+    width: 1920px;
+    height: 400px;
+    position: absolute;
+    top: 900px;
+}
+.blender::after{
+    content: 'oi';
+    color: transparent;
+    background: linear-gradient(180deg, rgb(0,0,0), transparent);
+    width: 1920px;
+    height: 300px;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+/* area do blender */
+.blender{
+    background-image: url('./assets/png/imagem_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1920px;
+    height: 1050px;
+    position: absolute;
+    top: 2240px;
+}
+.blender img{
+    image-rendering: optimizeQuality;
+    width: 500px;
+    position: relative;
+    top: 30%;
+    left: 35%;
 }
