@@ -1,0 +1,17 @@
+.sobremim{
+    background-image: url('../png/sobremim.png');
+    height: 1080px;
+    width: 1920px;
+    overflow: hidden;
+    position: relative;
+}
+.sobremim::after{
+    content: 'oi';
+    color: transparent;
+    background: linear-gradient(0deg, rgb(0,0,0), rgb(0,0,0)50%, transparent);
+    width: 1920px;
+    height: 300px;
+    position:absolute;
+    top: 800px;
+    left: 0px;
+}

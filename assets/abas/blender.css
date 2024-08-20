@@ -1,0 +1,28 @@
+.blender::after{
+    content: 'oi';
+    color: transparent;
+    background: linear-gradient(180deg, rgb(0,0,0), transparent);
+    width: 1920px;
+    height: 300px;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+/* area do blender */
+.blender{
+    background-image: url('../png/imagem_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1920px;
+    height: 1050px;
+    position: absolute;
+    top: 2240px;
+}
+.blender img{
+    image-rendering: optimizeQuality;
+    width: 500px;
+    position: relative;
+    top: 30%;
+    left: 35%;
+    user-select: none;
+}

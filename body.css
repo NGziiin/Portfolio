@@ -1,0 +1,9 @@
+body{
+    background-repeat: no-repeat;
+    height: 3240px;
+    width: 1920px;
+    background-color: black;
+    overflow-x: hidden;
+    margin: 0px;
+    word-wrap: break-word;
+}

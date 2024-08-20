@@ -1,58 +1,7 @@
-body{
-    background-repeat: no-repeat;
-    height: 3240px;
-    width: 1920px;
-    background-color: black;
-    overflow-x: hidden;
-    margin: 0px;
-    word-wrap: break-word;
-}
-.sobremim{
-    background-color: black;
-    height: 1080px;
-    width: 1920px;
-    word-wrap: break-word;
-    overflow: hidden;
-    position: relative;
-}
-.sobremim h1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: skyblue;
-    font-size: 2em;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: none;
-    animation: animh1 5s alternate-reverse infinite;
-    font-size: small;
-    opacity: 30%;
-}
-/* animação das letras de fundo */
-@keyframes animh1 {
-    0%{
-        color: rgb(176,224,230)
-    }
-    20%{
-        color: rgb(135,206,235);
-    }
-    50%{
-        color: rgb(30,144,255);
-    }
-    100%{
-        text-shadow: 0px 0px 30px 30px skyblue;
-        color: rgb(0,0,139);
-    }
-
-}
 /* parte da programação */
 /* texto central */
 .programação{
-    background-image: url('./assets/png/imagem1.jpg');
+    background-image: url('../png/imagem1.jpg');
     background-repeat:no-repeat;
     height: 1080px;
     position:absolute;
@@ -124,7 +73,7 @@ body{
 /* projetos*/
 .programjetos{
     background-color: white;
-    background-image: image-set('./assets/png/homer.png');
+    background-image: url('../png/homer.png');
     background-repeat: no-repeat;
     background-position: center;
     width: 150px;
@@ -139,7 +88,7 @@ body{
 }
 .programjetos2{
     background-color: white;
-    background-image: image-set('./assets/png/bart.png');
+    background-image: url('../png/bart.png');
     background-size: 124px;
     background-repeat: no-repeat;
     background-position: center;
@@ -155,7 +104,7 @@ body{
 }
 .programjetos3{
     background-color: white;
-    background-image: image-set('./assets/png/em_breve.png');
+    background-image: url('../png/em_breve.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 155px;
@@ -171,7 +120,7 @@ body{
 }
 .programjetos4{
     background-color: white;
-    background-image: image-set('./assets/png/em_breve.png');
+    background-image: url('../png/em_breve.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 155px;
@@ -187,7 +136,7 @@ body{
 }
 .programjetos5{
     background-color: white;
-    background-image: image-set('./assets/png/em_breve.png');
+    background-image: url('../png/em_breve.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 155px;
@@ -204,7 +153,7 @@ body{
 /* segunda linha */ /* imagens de projetos */
 .programjetos6{
     background-color: white;
-    background-image: image-set('./assets/png/em_breve.png');
+    background-image: url('../png/em_breve.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 155px;
@@ -220,7 +169,7 @@ body{
 }
 .programjetos7{
     background-color: white;
-    background-image: image-set('./assets/png/em_breve.png');
+    background-image: url('../png/em_breve.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 155px;
@@ -236,7 +185,7 @@ body{
 }
 .programjetos8{
     background-color: white;
-    background-image: image-set('./assets/png/em_breve.png');
+    background-image: url('../png/em_breve.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 155px;
@@ -252,7 +201,7 @@ body{
 }
 .programjetos9{
     background-color: white;
-    background-image: image-set('./assets/png/em_breve.png');
+    background-image: url('../png/em_breve.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 155px;
@@ -268,7 +217,7 @@ body{
 }
 .programjetos10{
     background-color: white;
-    background-image: image-set('./assets/png/em_breve.png');
+    background-image: url('../png/em_breve.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 155px;
@@ -530,7 +479,7 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
 }
-.botao8:hover{
+.botao9:hover{
     background-color: rgb(255, 255, 255, 0.75);
     box-shadow: 0px 0px 5px 5px rgb(255, 255, 255, 0.75);
     font-size: medium;
@@ -586,31 +535,13 @@ body{
     position: absolute;
     top: 900px;
 }
-.blender::after{
-    content: 'oi';
+.programação::before{
+    content: 'sou lindo';
     color: transparent;
-    background: linear-gradient(180deg, rgb(0,0,0), transparent);
+    background: linear-gradient(180deg, rgb(0,0,0) 0%, rgb(0,0,0)40%, transparent);
     width: 1920px;
     height: 300px;
-    position:absolute;
-    top: 0px;
-    left: 0px;
-}
-/* area do blender */
-.blender{
-    background-image: url('./assets/png/imagem_2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 1920px;
-    height: 1050px;
     position: absolute;
-    top: 2240px;
-}
-.blender img{
-    image-rendering: optimizeQuality;
-    width: 500px;
-    position: relative;
-    top: 30%;
-    left: 35%;
-    user-select: none;
+    top: 0px;
+    z-index: 1;
 }
