@@ -1,3 +1,8 @@
+// aba do inicio
+function github(){
+    window.open("https://github.com/NGziiin")
+}
+
 // configurando botões
 // botão do homer
 function view1bt(homer){
@@ -28,7 +33,7 @@ function reset(){
   
 // mensagem de em breve
 function error(x){
-    document.getElementById("texto").innerHTML = "EM BREVE";
+    document.getElementById("texto").innerHTML = "BREVE";
     document.getElementById("texto").style.color = 'white';
     if (x == 1){
         alert ("EM BREVE");

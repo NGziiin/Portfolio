@@ -19,31 +19,28 @@
 .barra{
     background-color: rgb(30,144,255, 1);
     backdrop-filter: blur(16px) saturate(180%);
-    width: 95%;
+    width: 60%;
     height: 80px;
     position: absolute;
     top: 0px;
-    left: 0.8%;
+    left: 20%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-bottom: auto;
 }
 .sociais{
-    background-color: red;
+    background-color: rgb(30,144,255, 1);
     position: fixed;
     left: 200px;
     top: 0px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     color: white;
-    border: transparent;
     text-align: center;
-    line-height: 35px;
-    font-size: 40px;
     width: 130px;
     height: 80px;
-    font-family: "Bebas Neue", sans-serif;
     transition: 2s;
+    user-select: none;
 }
 .sociais:hover{
     color: rgb(211,211,211, 0.8);
@@ -51,4 +48,20 @@
     backdrop-filter: blur(16px) saturate(180%);
     text-shadow: 0px 0px 5px 5px white;
     height: 300px;
+}
+.sociais p{
+    font-family: "Bebas Neue", sans-serif;
+    position: absolute;
+    line-height: 32px;
+    left: 20px;
+    top: -30px;
+    font-size: 40px;
+}
+.Github{
+    position: fixed;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    width: auto;
+    height: auto;
+    padding-bottom: 0px;
 }
