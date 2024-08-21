@@ -1,3 +1,4 @@
+
 .sobremim{
     background-image: url('../png/sobremim.png');
     height: 1080px;
@@ -14,4 +15,40 @@
     position:absolute;
     top: 800px;
     left: 0px;
+}
+.barra{
+    background-color: rgb(30,144,255, 1);
+    backdrop-filter: blur(16px) saturate(180%);
+    width: 95%;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0.8%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: auto;
+}
+.sociais{
+    background-color: red;
+    position: fixed;
+    left: 200px;
+    top: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    border: transparent;
+    text-align: center;
+    line-height: 35px;
+    font-size: 40px;
+    width: 130px;
+    height: 80px;
+    font-family: "Bebas Neue", sans-serif;
+    transition: 2s;
+}
+.sociais:hover{
+    color: rgb(211,211,211, 0.8);
+    background-color: rgb(30,144,255, 0.3);
+    backdrop-filter: blur(16px) saturate(180%);
+    text-shadow: 0px 0px 5px 5px white;
+    height: 300px;
 }
