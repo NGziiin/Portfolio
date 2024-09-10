@@ -1,6 +1,13 @@
 // aba do inicio
+
+// github
 function github(){
     window.open("https://github.com/NGziiin")
+}
+
+//instagram
+function instagram(){
+    window.open("https://www.instagram.com/h3r1ck00/")
 }
 
 // configurando botões
@@ -39,4 +46,3 @@ function error(x){
         alert ("EM BREVE");
     }
 }
-

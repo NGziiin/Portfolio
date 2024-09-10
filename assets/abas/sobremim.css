@@ -1,4 +1,5 @@
 
+/* background */
 .sobremim{
     background-image: url('../png/sobremim.png');
     height: 1080px;
@@ -16,6 +17,7 @@
     top: 800px;
     left: 0px;
 }
+/* barra inicial */
 .barra{
     background-color: rgb(30,144,255, 1);
     backdrop-filter: blur(16px) saturate(180%);
@@ -28,40 +30,58 @@
     border-bottom-right-radius: 20px;
     margin-bottom: auto;
 }
+/* redes sociais */
 .sociais{
-    background-color: rgb(30,144,255, 1);
-    position: fixed;
-    left: 200px;
-    top: 0px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    color: white;
-    text-align: center;
-    width: 130px;
+    background: transparent;
+    width: 110px;
     height: 80px;
-    transition: 2s;
-    user-select: none;
-}
-.sociais:hover{
-    color: rgb(211,211,211, 0.8);
-    background-color: rgb(30,144,255, 0.3);
-    backdrop-filter: blur(16px) saturate(180%);
-    text-shadow: 0px 0px 5px 5px white;
-    height: 300px;
+    position: fixed;
+    left: 80px;
 }
 .sociais p{
+    color: white;
     font-family: "Bebas Neue", sans-serif;
-    position: absolute;
-    line-height: 32px;
-    left: 20px;
-    top: -30px;
     font-size: 40px;
+    text-align: center;
+    line-height: 0.8;
+    position: absolute;
+    left: 10px;
+    top: -30px;
+    user-select: none;
 }
-.Github{
+/* aba das redes sociais */
+.infosociais{
+    background-color: rgb(30,144,255, 0.5);
+    width: 110px;
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    backdrop-filter: blur(16px), saturate(180%);
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+}
+/* animação no sociais */
+.sociais:hover .infosociais{
+    opacity: 1;
+    pointer-events: auto;
+    height: 300px;
+}
+/* botoões das redes sociais */
+.instagram{
     position: fixed;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 28px;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 30px;
-    width: auto;
-    height: auto;
-    padding-bottom: 0px;
+    top: 100px;
+    transition: 1s;
+}
+.instagram:hover {
+    background-image: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    background-clip: text;
+    color: transparent;
 }
