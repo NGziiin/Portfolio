@@ -70,18 +70,64 @@
     height: 300px;
 }
 /* botoões das redes sociais */
+/* instagram */
 .instagram{
     position: fixed;
     background-color: transparent;
+    height: 30px;
+    line-height: 30px;
     border: transparent;
     color: white;
+    text-align: center;
     font-size: 28px;
     font-family: "Bebas Neue", sans-serif;
     top: 100px;
     transition: 1s;
+    user-select: none;
+    cursor: pointer;
 }
 .instagram:hover {
     background-image: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
     background-clip: text;
     color: transparent;
+    font-size: 29px;
+}
+/* Github */
+.github{
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    border: transparent;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    position: fixed;
+    top: 140px;
+    left: 95px;
+    transition: 1s;
+    user-select: none;
+    cursor: pointer;
+}
+.github:hover{
+    color: black;
+    font-size: 31px;
+}
+.Linkedin{
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    border: transparent;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    position: fixed;
+    top: 182px;
+    left: 87px;
+    transition: 1s;
+    user-select: none;
+    cursor: pointer;
+}
+.Linkedin:hover{
+    color: #0077B5;
+    font-size: 31px;
 }

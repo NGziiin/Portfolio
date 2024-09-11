@@ -1,14 +1,17 @@
 // aba do inicio
 
-// github
-function github(){
-    window.open("https://github.com/NGziiin")
+// abrindo os sites
+function redes(resposta){
+    switch (resposta){
+        case 1:
+            window.open("https://www.instagram.com/h3r1ck00/")
+        case 2:
+            window.open("https://github.com/NGziiin")
+        case 3:
+            window.open("https://www.linkedin.com/in/herick-alves-5601a2312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app")
+    }
 }
 
-//instagram
-function instagram(){
-    window.open("https://www.instagram.com/h3r1ck00/")
-}
 
 // configurando botões
 // botão do homer
