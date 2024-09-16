@@ -12,7 +12,18 @@ function redes(resposta){
     }
 }
 
-
+function rolagem(t){
+    switch (t){
+        case 1:
+            tela = scrollY;
+            final = 0;
+            window.scrollTo( 0, 1180);
+            break;
+        case 2:
+            window.scrollTo(0, 3240);
+            break;
+    }
+}
 // configurando botões
 // botão do homer
 function view1bt(homer){

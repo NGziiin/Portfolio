@@ -59,7 +59,7 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     backdrop-filter: blur(16px), saturate(180%);
-    opacity: 0;
+    opacity: 1;
     transition: 0.3s;
     pointer-events: none;
 }
@@ -67,7 +67,7 @@
 .sociais:hover .infosociais{
     opacity: 1;
     pointer-events: auto;
-    height: 300px;
+    height: 150px;
 }
 /* botoões das redes sociais */
 /* instagram */
@@ -112,6 +112,7 @@
     color: black;
     font-size: 31px;
 }
+/* linkedin */
 .Linkedin{
     background-color: transparent;
     color: white;
@@ -130,4 +131,30 @@
 .Linkedin:hover{
     color: #0077B5;
     font-size: 31px;
+}
+
+/* botões de rolagem */
+.programa{
+    background-color: transparent;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 40px;
+    font-size: 40px;
+    position: fixed;
+    left: 40%;
+    top: 25%;
+    border: transparent;
+    cursor: pointer;
+}
+.arquitetura{
+    background-color: transparent;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 40px;
+    font-size: 40px;
+    position: fixed;
+    left: 80%;
+    top: 25%;
+    border: transparent;
+    cursor: pointer;
 }
