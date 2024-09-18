@@ -13,17 +13,23 @@ function redes(resposta){
 }
 
 function rolagem(t){
-    switch (t){
-        case 1:
-            tela = scrollY;
-            final = 0;
-            window.scrollTo( 0, 1180);
-            break;
-        case 2:
+    if (t == 1){
+            function scrolldev(){
+                tela = scrollY;
+                final = 0;
+                limite = 1180;
+                if (tela <= limite){
+                    final = final + 5;
+                    window.scrollTo(0, final);
+                }
+                window.addEventListener( scrolldev, final);    
+            }
+        }
+    elif (t == 2){
             window.scrollTo(0, 3240);
-            break;
     }
 }
+
 // configurando botões
 // botão do homer
 function view1bt(homer){
