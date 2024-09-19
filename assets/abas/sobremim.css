@@ -158,3 +158,34 @@
     border: transparent;
     cursor: pointer;
 }
+.eu{
+    position: absolute;
+    left: 26%;
+    top: 30%;
+    user-select: none;
+    background-color: rgb(0,0,0, 0.7);
+    backdrop-filter: blur(16px) saturate(180%);
+    display: flex;
+    padding: 5px;
+    padding-left: 0px;
+    height: 420px;
+    width: 900px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 9px black;
+}
+.title{
+    display: flex;
+    position:absolute;
+    color: white;
+    font-size: 60px;
+    left: 30%;
+    top: 30px;
+}
+.texto2{
+    color: white;
+    position: absolute;
+    font-size: 35px;
+    top: 30%;
+    left: 5%;
+    text-align: left;
+}

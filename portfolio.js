@@ -14,22 +14,21 @@ function redes(resposta){
 
 function rolagem(t){
     if (t == 1){
-            function scrolldev(){
-                tela = scrollY;
-                final = 0;
-                limite = 1180;
+            function roladev(){
+                const tela = window.scrollY;
+                const final = 0;
+                let limite = 1180;
                 if (tela <= limite){
-                    final = final + 5;
+                    final = final + 50;
                     window.scrollTo(0, final);
                 }
-                window.addEventListener( scrolldev, final);    
             }
+            window.addEventListener( "scroll", roladev);
         }
-    elif (t == 2){
-            window.scrollTo(0, 3240);
+        else if(t == 2){
+            window.scrollBy(0, 4000)
+        }
     }
-}
-
 // configurando botões
 // botão do homer
 function view1bt(homer){
